@@ -9,6 +9,9 @@ It is a plain static website (HTML, CSS, JavaScript, SVG). No accounts, no cooki
 
 > **Status: draft.** The map and put-away order are real. Item names, descriptions, quantities, instructions and all photos are still placeholders ("Details needed" / "Photo needed") until the clinic supplies them.
 
+Live site: https://psftc2082424.github.io/westminster-storage-guide/
+QR code (opens the live site): `qr/westminster-storage-guide-qr.png` (print from the .svg for best quality)
+
 ## Who owns this
 - Repository owner: GitHub account `psftc2082424` (personal account; consider transferring to a clinic-owned organization)
 - Last reviewed: **2026-11-08** (update `lastReviewed` in `closet-data.js` each time someone checks it)
@@ -60,4 +63,5 @@ Buy/own the domain, then Settings > Pages > Custom domain. Keep the QR code poin
 - Map is redrawn from a hand sketch and is **not to scale**.
 - English only. Progress is not saved (by design).
 - The "Boxes" area at the bottom right of the sketch is drawn as a dashed area but is not a zone yet.
+
 
