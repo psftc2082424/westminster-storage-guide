@@ -63,7 +63,7 @@ window.CLOSET_DATA = {
       {"src": "assets/zones/book-cart-1.jpg", "alt": "Wooden rolling book cart filled with children's books, beside a small wooden table and a large whiteboard.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."}
     ] },
     { id: "shredder", code: "K", name: "Shredder", hotspot: "hotspot-shredder", description: "", photos: [
-      {"src": "assets/zones/shredder-1.jpg", "alt": "Black paper shredder on the floor next to a wooden book cart full of children's books, beside a large whiteboard.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."}
+      {"src": "assets/zones/shredder-1.jpg", "alt": "Black paper shredder on the floor beside a wooden book cart full of children's books, next to a large whiteboard.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."}
     ] },
     { id: "printer-cart", code: "L", name: "Printer cart", hotspot: "hotspot-printer-cart", description: "", photos: [
       {"src": "assets/zones/printer-cart-1.jpg", "alt": "White printer sitting on a gray rolling cart, with a black shredder behind it.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."}
