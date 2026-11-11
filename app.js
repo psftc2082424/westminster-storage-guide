@@ -106,13 +106,11 @@
     var card = el('article', { class: 'item-card' },
       el('h3', null, item.name, item.placeholder ? el('span', { class: 'badge', text: 'Details needed' }) : null),
       figure(item.photo || (opts.showZone && z && z.photos && z.photos[0]) || null, 'photo of ' + item.name),
-      item.description ? el('p', { text: item.description }) : el('p', { class: 'needed', text: 'Description needed.' }),
+      item.description ? el('p', { text: item.description }) : el('p', { class: 'needed', text: 'Description needed: please write a short description of this item.' }),
       el('dl', null,
         z && opts.showZone ? [el('dt', { text: 'Where it goes' }),
           el('dd', null, el('span', { class: 'zone-chip', text: z.code }), z.name + ' ',
-            el('a', { href: '#/map/' + z.id, text: '(view zone on map)' }))] : null,
-        el('dt', { text: 'Quantity' }),
-        el('dd', item.quantity ? { text: item.quantity } : { class: 'needed', text: 'Quantity needed.' })
+            el('a', { href: '#/map/' + z.id, text: '(view zone on map)' }))] : null
       ),
       item.placementPhoto ? figure(item.placementPhoto, '') : null
     );

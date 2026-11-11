@@ -75,19 +75,19 @@ window.CLOSET_DATA = {
   ],
 
   items: [
-    { id: "item-beds", zoneId: "beds", name: "Beds", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true },
-    { id: "item-carts", zoneId: "carts", name: "Carts", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true },
-    { id: "item-scales", zoneId: "scales", name: "Scales", description: "Weighing scales.", quantity: "", photo: null, placementPhoto: null, placeholder: true },
-    { id: "item-stools", zoneId: "stools", name: "Stools", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true },
-    { id: "item-trash-can", zoneId: "trash-can", name: "Trash cans", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true },
-    { id: "item-wire-cart", zoneId: "wire-cart", name: "Wire cart", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true },
-    { id: "item-vitals-cart", zoneId: "vitals-cart", name: "Vitals cart", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true },
-    { id: "item-cabinets", zoneId: "cabinets", name: "Cabinets", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true },
-    { id: "item-whiteboards", zoneId: "whiteboards", name: "Whiteboards", description: "Small whiteboard and big whiteboard.", quantity: "", photo: null, placementPhoto: null, placeholder: true },
-    { id: "item-book-cart", zoneId: "book-cart", name: "Book cart", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true },
-    { id: "item-shredder", zoneId: "shredder", name: "Shredder", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true },
-    { id: "item-printer-cart", zoneId: "printer-cart", name: "Printer cart", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true },
-    { id: "item-yellow-boxes", zoneId: "yellow-boxes", name: "Yellow boxes", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true }
+    { id: "item-beds", zoneId: "beds", name: "Beds", description: "", photo: null, placementPhoto: null, placeholder: true },
+    { id: "item-carts", zoneId: "carts", name: "Carts", description: "", photo: null, placementPhoto: null, placeholder: true },
+    { id: "item-scales", zoneId: "scales", name: "Scales", description: "Weighing scales.", photo: null, placementPhoto: null, placeholder: true },
+    { id: "item-stools", zoneId: "stools", name: "Stools", description: "", photo: null, placementPhoto: null, placeholder: true },
+    { id: "item-trash-can", zoneId: "trash-can", name: "Trash cans", description: "", photo: null, placementPhoto: null, placeholder: true },
+    { id: "item-wire-cart", zoneId: "wire-cart", name: "Wire cart", description: "", photo: null, placementPhoto: null, placeholder: true },
+    { id: "item-vitals-cart", zoneId: "vitals-cart", name: "Vitals cart", description: "", photo: null, placementPhoto: null, placeholder: true },
+    { id: "item-cabinets", zoneId: "cabinets", name: "Cabinets", description: "", photo: null, placementPhoto: null, placeholder: true },
+    { id: "item-whiteboards", zoneId: "whiteboards", name: "Whiteboards", description: "Small whiteboard and big whiteboard.", photo: null, placementPhoto: null, placeholder: true },
+    { id: "item-book-cart", zoneId: "book-cart", name: "Book cart", description: "", photo: null, placementPhoto: null, placeholder: true },
+    { id: "item-shredder", zoneId: "shredder", name: "Shredder", description: "", photo: null, placementPhoto: null, placeholder: true },
+    { id: "item-printer-cart", zoneId: "printer-cart", name: "Printer cart", description: "", photo: null, placementPhoto: null, placeholder: true },
+    { id: "item-yellow-boxes", zoneId: "yellow-boxes", name: "Yellow boxes", description: "", photo: null, placementPhoto: null, placeholder: true }
   ],
 
   /* The put-away order, exactly as given by the clinic. To reorder, move lines. */
