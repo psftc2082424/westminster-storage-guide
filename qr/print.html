@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Westminster Storage Guide - QR code printout</title>
+<style>
+  @page { size: letter portrait; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: #14212e; background: #fff; }
+  .page { width: 8.5in; height: 11in; padding: 0.75in; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .clinic { margin: 0; font-size: 22pt; color: #16507a; font-weight: 600; }
+  h1 { margin: 0.1in 0 0.25in; font-size: 44pt; line-height: 1.1; }
+  .lead { margin: 0 0 0.35in; font-size: 20pt; line-height: 1.35; max-width: 6.5in; }
+  .qr { width: 4.6in; height: 4.6in; padding: 0.2in; border: 4pt solid #16507a; border-radius: 0.2in; }
+  .qr img { width: 100%; height: 100%; display: block; image-rendering: pixelated; }
+  .scan { margin: 0.3in 0 0.1in; font-size: 26pt; font-weight: 700; }
+  .url { margin: 0; font-size: 15pt; color: #435465; word-break: break-all; }
+  .steps { margin: 0.35in 0 0; padding: 0; list-style: none; display: flex; gap: 0.3in; font-size: 15pt; }
+  .steps li { max-width: 2.2in; }
+  .steps b { display: block; font-size: 24pt; color: #16507a; }
+  @media screen { body { background: #e7edf3; } .page { margin: 0 auto; background: #fff; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="clinic">Westminster Free Clinic</p>
+  <h1>Storage Room Guide</h1>
+  <p class="lead">Not sure where something goes? Scan this code with your phone camera.</p>
+  <div class="qr"><img src="westminster-storage-guide-qr.svg" alt="QR code that opens the Westminster Storage Guide"></div>
+  <p class="scan">Scan to open the guide</p>
+  <p class="url">https://psftc2082424.github.io/westminster-storage-guide/</p>
+  <ol class="steps">
+    <li><b>1</b>Open your phone's camera</li>
+    <li><b>2</b>Point it at the code</li>
+    <li><b>3</b>Tap the link that appears</li>
+  </ol>
+</div>
+</body>
+</html>
