@@ -2,12 +2,12 @@
 
 A mobile-first guide for volunteers at **Westminster Free Clinic**, opened by scanning a QR code. It has two parts:
 
-- **Put supplies away** â€“ 11 steps in the clinic's required order, each highlighting the spot on a top-down map.
-- **Explore the room** â€“ a tappable map; each zone shows its photos, items, quantities and placement instructions.
+- **Put supplies away** – 10 steps in the clinic's required order, each highlighting the spot on a top-down map.
+- **Explore the room** – a tappable map; each zone shows its photos, items and quantities.
 
 It is a plain static website (HTML, CSS, JavaScript, SVG). No accounts, no cookies, no tracking, nothing saved on the device, no patient information.
 
-> **Status: draft.** The map and put-away order are real. Item names, descriptions, quantities, instructions and all photos are still placeholders ("Details needed" / "Photo needed") until the clinic supplies them.
+> **Status: draft.** The map and put-away order are real. Item names, descriptions and quantities are still placeholders ("Details needed" / "Photo needed") until the clinic supplies them.
 
 Live site: https://psftc2082424.github.io/westminster-storage-guide/
 QR code (opens the live site): `qr/westminster-storage-guide-qr.png` (print from the .svg for best quality)
@@ -46,7 +46,7 @@ All edits are in `closet-data.js`. Never change an `id` once it is in use.
 - **Remove / rename an item:** delete its line (and its id in any step), or change `name`.
 - **Change the placement order:** reorder the lines in `steps`.
 - **Edit a map zone:** the zone's text (name, letter, description, photos) is in `zones`. Its shape is the `<g id="hotspot-...">` in `index.html`; change `x`, `y`, `width`, `height` to move or resize. The map box is 1600 x 1160 units. To add a zone, add an entry to `zones` and a matching `<g id="hotspot-NEW">` with a `class="shape"` rect and a `<text class="zcode">`.
-- The zone **letters** (Aâ€“M) match the stickers to print and place in the room.
+- The zone **letters** (A–M) match the stickers to print and place in the room.
 
 ## Publish / redeploy (GitHub Pages)
 Settings > Pages > Source: **Deploy from a branch**, branch `main`, folder `/ (root)`. Any push to `main` republishes in about a minute. The site will be at `https://<account>.github.io/westminster-storage-guide/`. All paths are relative, so it works under that subfolder.

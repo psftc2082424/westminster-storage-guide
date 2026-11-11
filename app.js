@@ -112,11 +112,9 @@
           el('dd', null, el('span', { class: 'zone-chip', text: z.code }), z.name + ' ',
             el('a', { href: '#/map/' + z.id, text: '(view zone on map)' }))] : null,
         el('dt', { text: 'Quantity' }),
-        el('dd', item.quantity ? { text: item.quantity } : { class: 'needed', text: 'Quantity needed.' }),
-        el('dt', { text: 'How to place it' }),
-        el('dd', item.instructions ? { text: item.instructions } : { class: 'needed', text: 'Placement instructions needed.' })
+        el('dd', item.quantity ? { text: item.quantity } : { class: 'needed', text: 'Quantity needed.' })
       ),
-      figure(item.placementPhoto, 'how ' + item.name + ' should look when put away correctly')
+      item.placementPhoto ? figure(item.placementPhoto, '') : null
     );
     return card;
   }
