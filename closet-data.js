@@ -54,7 +54,7 @@ window.CLOSET_DATA = {
       {"src": "assets/zones/vitals-cart-1.jpg", "alt": "Small wire-drawer cart with a wooden top holding a green supply box and a pink container, circled in red, between the white column scales and a wire cart.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."}
     ] },
     { id: "cabinets", code: "H", name: "Cabinets", hotspot: "hotspot-cabinets", description: "", photos: [
-      {"src": "assets/zones/cabinets-1.jpg", "alt": "Tall beige filing cabinet with an orange note on it, beside red rolling tool carts.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."}
+      {"src": "assets/zones/cabinets-1.jpg", "alt": "Stack of white plastic storage drawers beside a wire rolling cart holding hand sanitizer, a clipboard and supplies, in front of a red tool cart.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."}
     ] },
     { id: "whiteboards", code: "I", name: "Whiteboards", hotspot: "hotspot-whiteboards", description: "Small whiteboard and big whiteboard.", photos: [
       {"src": "assets/zones/whiteboards-1.jpg", "alt": "Large white rolling whiteboard stand in the foreground, with white column scales, red and black carts and stacked folding beds behind it.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."}
@@ -63,7 +63,7 @@ window.CLOSET_DATA = {
       {"src": "assets/zones/book-cart-1.jpg", "alt": "Wooden rolling book cart filled with children's books, beside a small wooden table and a large whiteboard.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."}
     ] },
     { id: "shredder", code: "K", name: "Shredder", hotspot: "hotspot-shredder", description: "", photos: [
-      {"src": "assets/zones/shredder-1.jpg", "alt": "Black paper shredder on the floor behind a printer cart, next to a large clear whiteboard.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."}
+      {"src": "assets/zones/shredder-1.jpg", "alt": "Black paper shredder on the floor next to a wooden book cart full of children's books, beside a large whiteboard.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."}
     ] },
     { id: "printer-cart", code: "L", name: "Printer cart", hotspot: "hotspot-printer-cart", description: "", photos: [
       {"src": "assets/zones/printer-cart-1.jpg", "alt": "White printer sitting on a gray rolling cart, with a black shredder behind it.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."}
