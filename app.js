@@ -104,15 +104,13 @@
   function itemCard(item, opts) {
     var z = zones[item.zoneId];
     var card = el('article', { class: 'item-card' },
-      el('h3', null, item.name, item.placeholder ? el('span', { class: 'badge', text: 'Details needed' }) : null),
+      el('h3', { text: item.name }),
       figure(item.photo || (opts.showZone && z && z.photos && z.photos[0]) || null, 'photo of ' + item.name),
-      item.description ? el('p', { text: item.description }) : el('p', { class: 'needed', text: 'Description needed.' }),
+      item.description ? el('p', { text: item.description }) : el('p', { class: 'needed', text: 'Description needed: please write a short description of this item.' }),
       el('dl', null,
         z && opts.showZone ? [el('dt', { text: 'Where it goes' }),
           el('dd', null, el('span', { class: 'zone-chip', text: z.code }), z.name + ' ',
-            el('a', { href: '#/map/' + z.id, text: '(view zone on map)' }))] : null,
-        el('dt', { text: 'Quantity' }),
-        el('dd', item.quantity ? { text: item.quantity } : { class: 'needed', text: 'Quantity needed.' })
+            el('a', { href: '#/map/' + z.id, text: '(view zone on map)' }))] : null
       ),
       item.placementPhoto ? figure(item.placementPhoto, '') : null
     );
@@ -209,15 +207,14 @@
     var panel = null;
     if (z) {
       var stepNo = stepNumberForZone(z.id);
-      var zItems = D.items.filter(function (i) { return i.zoneId === z.id; });
+      var zDescs = [z.description].concat(D.items.filter(function (i) { return i.zoneId === z.id; }).map(function (i) { return i.description; }))
+        .filter(function (t) { return t; });
       panel = el('section', { class: 'panel', 'aria-label': zoneLabel(z) },
         el('a', { class: 'btn back', href: '#/map' }, '← Back to full map'),
         el('h1', { tabindex: '-1' }, el('span', { class: 'zone-chip', text: z.code }), z.name),
         stepNo ? el('p', { text: 'Put-away step ' + stepNo + ' of ' + steps.length + '. ' }, el('a', { href: '#/guide/' + stepNo, text: 'Open that step' })) : null,
-        z.description ? el('p', { text: z.description }) : el('p', { class: 'needed', text: 'Description needed.' }),
+        zDescs.length ? zDescs.map(function (t) { return el('p', { text: t }); }) : el('p', { class: 'needed', text: 'Description needed.' }),
         (z.photos && z.photos.length ? z.photos : [null]).map(function (p) { return figure(p, 'photo of ' + z.name); }),
-        el('h2', { text: 'Items here' }),
-        zItems.length ? zItems.map(function (i) { return itemCard(i, { showZone: false }); }) : el('p', { class: 'needed', text: 'No items listed for this zone yet.' }),
         el('a', { class: 'btn', href: '#/map' }, '← Back to full map')
       );
     }
