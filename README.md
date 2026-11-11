@@ -32,6 +32,9 @@ backup/           ZIP of the whole site
 ## Photos shown today
 Zone photos in `assets/zones/` came from clinic-supplied pictures (location data stripped, resized to 1000px). Photos showing people were left out. Items without their own photo borrow their zone's first photo in the put-away steps.
 
+## After you edit files
+In `index.html`, change the `?v=20261111` number on the CSS and two script lines (any new value, e.g. today's date). This is cache-busting: it makes phones and browsers fetch the new files instead of showing an old copy. GitHub Pages can also take a minute or two to publish.
+
 ## Run it locally
 Double-clicking `index.html` works in most browsers. For an exact preview, open a terminal in this folder and run `python -m http.server 8000`, then visit http://localhost:8000.
 
