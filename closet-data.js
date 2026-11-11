@@ -39,13 +39,14 @@ window.CLOSET_DATA = {
     ] },
     { id: "scales", code: "C", name: "Scales", hotspot: "hotspot-scales", description: "", photos: [
       {"src": "assets/zones/scales-1.jpg", "alt": "White column weighing scale standing against beige storage cabinets, beside a black cart stacked on a red cart.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."},
-      {"src": "assets/zones/scales-2.jpg", "alt": "Three white column weighing scales standing in front of red and black carts.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."},
-      {"src": "assets/zones/scales-3.jpg", "alt": "Weighing-scale beams mounted on red and black carts, with a black folded bed on top.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."}
+      {"src": "assets/zones/scales-2.jpg", "alt": "Three white column weighing scales standing in front of red and black carts.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."}
     ] },
     { id: "stools", code: "D", name: "Stools", hotspot: "hotspot-stools", description: "", photos: [
       {"src": "assets/zones/stools-1.jpg", "alt": "Swivel stool bases stored on top of a red cart near the ceiling.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."}
     ] },
-    { id: "trash-can", code: "E", name: "Trash can", hotspot: "hotspot-trash-can", description: "", photos: [] },
+    { id: "trash-can", code: "E", name: "Trash cans", hotspot: "hotspot-trash-can", description: "", photos: [
+      {"src": "assets/zones/trash-can-1.jpg", "alt": "Stack of black plastic trash cans lying on their sides on top of a red cart and a black cart, above two white column scales.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."}
+    ] },
     { id: "wire-cart", code: "F", name: "Wire cart", hotspot: "hotspot-wire-cart", description: "", photos: [
       {"src": "assets/zones/wire-cart-1.jpg", "alt": "White plastic drawer units and a wire rolling cart holding hand sanitizer, a clipboard and supplies, beside a red tool cart.", "caption": "Photo of this area as it looked when photographed; the arrangement may differ slightly."}
     ] },
@@ -78,7 +79,7 @@ window.CLOSET_DATA = {
     { id: "item-carts", zoneId: "carts", name: "Carts", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true },
     { id: "item-scales", zoneId: "scales", name: "Scales", description: "Weighing scales.", quantity: "", photo: null, placementPhoto: null, placeholder: true },
     { id: "item-stools", zoneId: "stools", name: "Stools", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true },
-    { id: "item-trash-can", zoneId: "trash-can", name: "Trash can", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true },
+    { id: "item-trash-can", zoneId: "trash-can", name: "Trash cans", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true },
     { id: "item-wire-cart", zoneId: "wire-cart", name: "Wire cart", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true },
     { id: "item-vitals-cart", zoneId: "vitals-cart", name: "Vitals cart", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true },
     { id: "item-cabinets", zoneId: "cabinets", name: "Cabinets", description: "", quantity: "", photo: null, placementPhoto: null, placeholder: true },
@@ -92,7 +93,7 @@ window.CLOSET_DATA = {
   /* The put-away order, exactly as given by the clinic. To reorder, move lines. */
   steps: [
     { id: "step-01", title: "Beds, carts and scales", itemIds: ["item-beds", "item-carts", "item-scales"] },
-    { id: "step-02", title: "Stools and trash can", itemIds: ["item-stools", "item-trash-can"] },
+    { id: "step-02", title: "Stools and trash cans", itemIds: ["item-stools", "item-trash-can"] },
     { id: "step-03", title: "Wire cart", itemIds: ["item-wire-cart"] },
     { id: "step-04", title: "Vitals cart", itemIds: ["item-vitals-cart"] },
     { id: "step-05", title: "Cabinets", itemIds: ["item-cabinets"] },
