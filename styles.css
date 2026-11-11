@@ -151,3 +151,5 @@ a { color: var(--brand); }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
 
 .controls .btn { padding: 10px 6px; }
+
+.closet-map .divider { stroke: #1b3a57; stroke-width: 4; pointer-events: none; }

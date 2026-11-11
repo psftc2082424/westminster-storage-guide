@@ -1,4 +1,4 @@
-﻿# Westminster Storage Guide
+# Westminster Storage Guide
 
 A mobile-first guide for volunteers at **Westminster Free Clinic**, opened by scanning a QR code. It has two parts:
 
