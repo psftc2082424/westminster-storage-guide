@@ -105,7 +105,7 @@
     var z = zones[item.zoneId];
     var card = el('article', { class: 'item-card' },
       el('h3', null, item.name, item.placeholder ? el('span', { class: 'badge', text: 'Details needed' }) : null),
-      figure(item.photo, 'photo of ' + item.name),
+      figure(item.photo || (opts.showZone && z && z.photos && z.photos[0]) || null, 'photo of ' + item.name),
       item.description ? el('p', { text: item.description }) : el('p', { class: 'needed', text: 'Description needed.' }),
       el('dl', null,
         z && opts.showZone ? [el('dt', { text: 'Where it goes' }),

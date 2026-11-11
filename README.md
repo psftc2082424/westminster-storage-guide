@@ -29,6 +29,9 @@ backup/           ZIP of the whole site
 ```
 (There is no separate `map.svg`: the map lives inside `index.html` so it works when opened from a file and under any web address.)
 
+## Photos shown today
+Zone photos in `assets/zones/` came from clinic-supplied pictures (location data stripped, resized to 1000px). Photos showing people were left out. Items without their own photo borrow their zone's first photo in the put-away steps.
+
 ## Run it locally
 Double-clicking `index.html` works in most browsers. For an exact preview, open a terminal in this folder and run `python -m http.server 8000`, then visit http://localhost:8000.
 
